@@ -3,6 +3,7 @@ source :rubygems
 gem "rails", "3.2.7"
 gem "pg"
 gem "jquery-rails"
+gem "bcrypt-ruby", :require => "bcrypt"
 
 group :assets do
   gem "sass-rails", "~> 3.2.3"
@@ -10,10 +11,15 @@ group :assets do
   gem "uglifier", ">= 1.0.3"
 end
 
-group :development do
-  gem "nifty-generators", "~> 0.4.6"
+group :test do
+  gem "mocha"
 end
 
-gem "mocha", :group => :test
+group :development do
+  gem "nifty-generators", "~> 0.4.6"
+  gem "heroku", "~> 2.32.6"
+end
 
-gem "bcrypt-ruby", :require => "bcrypt"
+group :production do
+  gem "thin", "~> 1.5.0"
+end
