@@ -1,12 +1,7 @@
 <% title "Feature" %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @feature.name %>
-</p>
+<%= render @feature %>
 
 <p>
-  <%= link_to "Edit", edit_feature_path(@feature) %> |
-  <%= link_to "Destroy", @feature, :confirm => 'Are you sure?', :method => :delete %> |
   <%= link_to "View All", features_path %>
 </p>

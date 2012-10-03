@@ -1,0 +1,29 @@
+<p>
+  <strong>Name:</strong>
+  <%= customer.name %>
+</p>
+
+<h2>Locations</h2>
+<ol>
+  <% customer.locations.each do |location| %>
+    <li>
+      <strong>Name:</strong>
+      <%= location.name %>
+    </li>
+  <% end %>
+</ol>
+
+<h2>Features</h2>
+<ol>
+  <% customer.features.each do |features| %>
+    <li>
+      <strong>Name:</strong>
+      <%= features.name %>
+    </li>
+  <% end %>
+</ol>
+
+<p>
+  <%= link_to "Edit", edit_customer_path(customer) %> |
+  <%= link_to "Destroy", customer, :confirm => 'Are you sure?', :method => :delete %>
+</p>
