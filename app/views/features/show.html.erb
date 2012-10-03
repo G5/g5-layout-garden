@@ -2,6 +2,8 @@
 
 <%= render @feature %>
 
-<p>
-  <%= link_to "View All", features_path %>
-</p>
+<% if logged_in? %>
+  <p>
+    <%= link_to "View All", features_path %>
+  </p>
+<% end %>

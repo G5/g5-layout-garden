@@ -3,7 +3,9 @@
   <%= feature.name %>
 </p>
 
-<p>
-  <%= link_to "Edit", edit_feature_path(feature) %> |
-  <%= link_to "Destroy", feature, :confirm => 'Are you sure?', :method => :delete %>
-</p>
+<% if logged_in? %>
+  <p>
+    <%= link_to "Edit", edit_feature_path(feature) %> |
+    <%= link_to "Destroy", feature, :confirm => 'Are you sure?', :method => :delete %>
+  </p>
+<% end %>

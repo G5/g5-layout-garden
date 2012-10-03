@@ -2,6 +2,8 @@
 
 <%= render @location %>
 
-<p>
-  <%= link_to "View All", locations_path %>
-</p>
+<% if logged_in? %>
+  <p>
+    <%= link_to "View All", locations_path %>
+  </p>
+<% end %>

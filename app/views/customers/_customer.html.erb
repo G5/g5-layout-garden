@@ -23,7 +23,9 @@
   <% end %>
 </ol>
 
-<p>
-  <%= link_to "Edit", edit_customer_path(customer) %> |
-  <%= link_to "Destroy", customer, :confirm => 'Are you sure?', :method => :delete %>
-</p>
+<% if logged_in? %>
+  <p>
+    <%= link_to "Edit", edit_customer_path(customer) %> |
+    <%= link_to "Destroy", customer, :confirm => 'Are you sure?', :method => :delete %>
+  </p>
+<% end %>

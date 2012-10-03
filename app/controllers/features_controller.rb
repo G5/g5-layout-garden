@@ -1,5 +1,5 @@
 class FeaturesController < ApplicationController
-  before_filter :login_required
+  before_filter :login_required, except: [:show]
 
   def index
     @features = Feature.all
