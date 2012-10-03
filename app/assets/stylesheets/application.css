@@ -77,3 +77,7 @@ a {
 .h-entry a {
   display: block;
 }
+
+.h-entry dt {
+  font-weight: bold;
+}
