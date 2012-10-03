@@ -1,0 +1,71 @@
+<% title "Feed" %>
+
+<section class="h-feed">
+  <% @customers.each do |customer| %>
+    <article class="h-entry">
+      <h1 class="p-name"><%= customer.name %></h1>
+      <p class="p-summary">Signed up with <%= customer.locations.size %> locations</p>
+      <time datetime="<%= customer.created_at_computer_readable %>" class="dt-published">
+        <%= customer.created_at_human_readable %>
+      </time>
+      <a class="p-category" href="http://g5.com/tag/new-customer" rel="tag">
+        New Customer
+      </a>
+      <a class="u-url u-uid" href="<%= customer_url(customer) %>">
+        <%= customer_url(customer) %>
+      </a>
+
+      <div class="p-author h-card">
+        <p class="p-name"><%= customer.admin.username %></p>
+        <a class="u-email" href="mailto:<%= customer.admin.email %>">
+          <%= customer.admin.email %>
+        </a>
+        <a class="u-url u-uid" href="<%= admin_url(customer.admin) %>">
+          <%= admin_url(customer.admin) %>
+        </a>
+      </div>
+
+      <dl class="e-content">
+
+        <dt>Customer</dt> 
+        <dd class="h-card">
+          <p class="p-name"><%= customer.name %></p>
+          <a class="u-url u-uid" href="<%= customer_url(customer) %>">
+            <%= customer_url(customer) %>
+          </a>
+        </dd>
+
+        <dt>Corporate</dt>
+        <% customer.locations.corporate.each do |location| %>
+          <dd class="h-card">
+            <p class="p-name"><%= location.name %></p>
+            <a class="u-url u-uid" href="<%= location_url(location) %>">
+              <%= location_url(location) %>
+            </a>
+          </dd>
+        <% end %>
+
+        <dt>Locations</dt>
+        <% customer.locations.not_corporate.each do |location| %>
+          <dd class="h-card">
+            <p class="p-name"><%= location.name %></p>
+            <a class="u-url u-uid" href="<%= location_url(location) %>">
+              <%= location_url(location) %>
+            </a>
+          </dd>
+        <% end %>
+
+        <dt>Features</dt>
+        <% customer.features.each do |feature| %>
+          <dd class="h-product">
+            <p class="p-name"><%= feature.name %></p>
+            <a class="u-url u-uid" href="<%= feature_url(feature) %>">
+              <%= feature_url(feature) %>
+            </a>
+          </dd>
+        <% end %>
+
+      </dl>
+    </article>
+  <% end %>
+</section>

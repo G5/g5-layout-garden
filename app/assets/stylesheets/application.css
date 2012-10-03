@@ -73,3 +73,7 @@ a {
 .error_messages ul {
   margin: 0;
 }
+
+.h-entry a {
+  display: block;
+}

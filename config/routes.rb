@@ -1,9 +1,7 @@
 G5Hub::Application.routes.draw do
 
   resources :features
-
   resources :locations
-
   resources :customers
 
   match 'admin/edit' => 'admins#edit', :as => :edit_current_admin
@@ -14,5 +12,5 @@ G5Hub::Application.routes.draw do
   resources :sessions
   resources :admins
 
-  root to: "admins#edit"
+  root to: "feed#index"
 end
