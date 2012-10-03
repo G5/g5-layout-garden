@@ -11,19 +11,22 @@ class CustomersController < ApplicationController
 
   def new
     @customer = Customer.new
+    @customer.locations.build
   end
 
   def create
-    @customer = Customer.new(params[:customer])
+    @customer = Customer.new(params[:customer].merge(admin_id: current_admin.id))
     if @customer.save
       redirect_to @customer, :notice => "Successfully created customer."
     else
+    @customer.locations.build if @customer.locations.blank?
       render :action => 'new'
     end
   end
 
   def edit
     @customer = Customer.find(params[:id])
+    @customer.locations.build if @customer.locations.blank?
   end
 
   def update
@@ -31,6 +34,7 @@ class CustomersController < ApplicationController
     if @customer.update_attributes(params[:customer])
       redirect_to @customer, :notice  => "Successfully updated customer."
     else
+      @customer.locations.build if @customer.locations.blank?
       render :action => 'edit'
     end
   end

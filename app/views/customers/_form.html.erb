@@ -4,5 +4,31 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </p>
+
+  <h2>Locations</h2>
+  <div id="locations_container">
+    <%= f.fields_for :locations do |location| %>
+      <div>
+        <p>
+          <%= location.label :name %>
+          <%= location.text_field :name %>
+          <a href="#" class="destroy">×</a>
+        </p>
+        <p>
+          <%= location.check_box :corporate %>
+          <%= location.label :corporate %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+  <p><a href="#" id="add_another">+ add another location</a></p>
+
+  <h2>Features</h2>
+  <%= hidden_field_tag "customer[feature_ids][]", nil %>
+  <% Feature.all.each do |feature| %>
+    <%= check_box_tag "customer[feature_ids][]", feature.id, @customer.feature_ids.include?(feature.id), id: dom_id(feature) %>
+    <%= label_tag dom_id(feature), feature.name %><br>
+  <% end %>
+
   <p><%= f.submit %></p>
 <% end %>
