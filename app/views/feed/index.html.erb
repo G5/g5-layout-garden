@@ -4,7 +4,11 @@
 <section class="h-feed">
   <% @customers.each do |customer| %>
     <article class="h-entry">
-      <h1 class="p-name"><%= customer.name %></h1>
+      <h1 class="p-name">
+        <a href="<%= customer_url(customer) %>" rel="bookmark">
+          <%= customer.name %>
+        </a>
+      </h1>
       <p class="p-summary">Signed up with <%= customer.locations.size %> locations</p>
       <time datetime="<%= customer.created_at_computer_readable %>" class="dt-published">
         <%= customer.created_at_human_readable %>
