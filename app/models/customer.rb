@@ -13,7 +13,7 @@ class Customer < ActiveRecord::Base
   
   def created_at_computer_readable
     # http://www.w3schools.com/html5/att_time_datetime.asp
-    created_at.strftime("%Y-%m-%dT%H:%M:%S%Z")
+    created_at.utc.strftime("%Y-%m-%dT%H:%M:%SZ")
   end
 
   def created_at_human_readable
