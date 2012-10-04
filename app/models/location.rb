@@ -11,6 +11,6 @@ class Location < ActiveRecord::Base
   private
 
   def not_corporate_by_default
-    self.corporate = false
+    self.corporate = false if corporate.blank?
   end
 end
