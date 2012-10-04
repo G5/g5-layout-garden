@@ -3,6 +3,7 @@
 
 <section class="h-feed">
   <% @customers.each do |customer| %>
+    <hr/>
     <article class="h-entry">
       <h1 class="p-name">
         <a href="<%= customer_url(customer) %>" rel="bookmark">
