@@ -4,6 +4,8 @@ gem "rails", "3.2.7"
 gem "pg"
 gem "jquery-rails"
 gem "bcrypt-ruby", :require => "bcrypt"
+gem "webhook", git: "git://github.com/G5/webhook.git", branch: "configuration"
+gem "flowerbox", "~> 0.0.1"
 
 group :assets do
   gem "sass-rails", "~> 3.2.3"
