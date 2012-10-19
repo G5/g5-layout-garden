@@ -27,7 +27,7 @@ class Customer < ActiveRecord::Base
   def post_webhook
     url = ENV["CONFIGURATOR_WEBHOOK_URL"]
     if url
-      logger.flowerbox(url)
+      logger.flowerbox(url) if Rails.env.development?
       Webhook.post(url) 
     end
   end
