@@ -1,5 +1,5 @@
 class FeedController < ApplicationController
   def index
-    @customers = Customer.all
+    @customers = Customer.order('created_at desc')
   end
 end
