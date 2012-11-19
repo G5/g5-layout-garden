@@ -14,7 +14,10 @@ group :assets do
 end
 
 group :test do
-  gem "mocha"
+  gem "rspec-rails"
+  gem "guard-rspec"
+  gem "guard-spork"
+  gem 'rb-fsevent', '~> 0.9.1'
 end
 
 group :development do

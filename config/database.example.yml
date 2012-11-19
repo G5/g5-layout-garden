@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: g5_hub_development
+  database: g5_layout_garden_development
   pool: 5
-  username: g5_hub
+  username: g5_layout_garden
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: g5_hub_test
+  database: g5_layout_garden_test
   pool: 5
-  username: g5_hub
+  username: g5_layout_garden
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: g5_hub_production
+  database: g5_layout_garden_production
   pool: 5
-  username: g5_hub
+  username: g5_layout_garden
   password:

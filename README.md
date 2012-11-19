@@ -36,7 +36,7 @@ rake db:create db:schema:load db:seed
 1. Create new Pull Request
 
 If you find bugs, have feature requests or questions, please
-[file an issue](https://github.com/G5/g5_hub/issues).
+[file an issue](https://github.com/G5/g5_layout_garden/issues).
 
 
 ## License

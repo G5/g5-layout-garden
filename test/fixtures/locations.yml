@@ -1,9 +1,0 @@
-one:
-  customer_id: 1
-  name: MyString
-  corporate: false
-
-two:
-  customer_id: 1
-  name: MyString
-  corporate: false
