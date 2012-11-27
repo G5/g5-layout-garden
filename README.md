@@ -1,6 +1,6 @@
-# G5 Hub
+# G5 Layout Garden
 
-A Rails application that publishes a feed consisting of hEntries as defined by [Microformats 2](http://microformats.org/wiki/microformats-2#h-entry). See the demo at [g5-hub.herokuapp.com](http://g5-hub.herokuappcom).
+A garden of layouts that can be used in client location sites
 
 
 ## Setup
@@ -17,12 +17,11 @@ vi config/database.yml # edit username
 rake db:create db:schema:load db:seed
 ```
 
-1. Set ENV variables
-    * `CONFIGURATOR_WEBHOOK_URL`
 
 ## Authors
 
   * Jessica Lynn Suttles / [@jlsuttles](https://github.com/jlsuttles)
+  * Bookis Smuin / [@bookis](https://github.com/bookis)
 
 
 ## Contributing
@@ -36,9 +35,11 @@ rake db:create db:schema:load db:seed
 1. Create new Pull Request
 
 If you find bugs, have feature requests or questions, please
-[file an issue](https://github.com/G5/g5_layout_garden/issues).
+[file an issue](https://github.com/g5search/g5-layout-garden/issues).
 
 
-## License
+## Specs
 
-???
+```bash
+guard
+```
