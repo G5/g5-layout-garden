@@ -1,0 +1,11 @@
+<h1>StaticAssets</h1>
+<% @static_assets.each do |layout| %>
+  <div class="h-entry">
+    <div class='p-name'>
+      <%= layout.name %>
+    </div>
+    <a href="<%= layout_url(layout.name) %>" rel="bookmark" class="u-url u-uid">
+      <%= layout_url(layout.name) %>
+    </a>
+  </div>
+<% end %>

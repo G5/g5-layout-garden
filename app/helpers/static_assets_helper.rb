@@ -1,0 +1,2 @@
+module StaticAssetsHelper
+end
