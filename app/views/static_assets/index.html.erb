@@ -1,11 +1,13 @@
 <h1>StaticAssets</h1>
-<% @static_assets.each do |layout| %>
-  <div class="h-entry">
-    <div class='p-name'>
-      <%= layout.name %>
+<div class="h-feed">
+  <% @static_assets.each do |static_asset| %>
+    <div class="h-entry">
+      <div class='p-name'>
+        <%= static_asset.name %>
+      </div>
+      <a href="<%= static_asset_url(static_asset.name) %>" rel="bookmark" class="u-url u-uid">
+        <%= static_asset_url(static_asset.name) %>
+      </a>
     </div>
-    <a href="<%= layout_url(layout.name) %>" rel="bookmark" class="u-url u-uid">
-      <%= layout_url(layout.name) %>
-    </a>
-  </div>
-<% end %>
+  <% end %>
+</div>

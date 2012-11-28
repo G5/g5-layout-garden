@@ -3,16 +3,16 @@ require 'spec_helper'
 describe StaticAsset do
 
   describe "class" do
-    let(:layouts) { StaticAsset.all }
+    let(:static_assets) { StaticAsset.all }
 
     it "has 3 things" do
-      layouts.should have(3).things
+      static_assets.should have(3).things
     end
   end
   describe "instance" do
-    let(:layout) { StaticAsset.open('lib/layouts/single-column.html') }
-    it "should have a layout" do
-      layout.name.should eq "single-column"
+    let(:static_asset) { StaticAsset.open('lib/layouts/single-column.html') }
+    it "should have a static_asset" do
+      static_asset.name.should eq "single-column"
     end
   end
 
