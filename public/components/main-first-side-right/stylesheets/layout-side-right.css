@@ -1,0 +1,11 @@
+@media (min-width: 980px) {
+  .layout-side-right .main {
+    float: left;
+  }
+  .layout-side-right .aside {
+    float: right;
+  }
+  footer[role=contentinfo] {
+    clear: both;
+  }
+}
