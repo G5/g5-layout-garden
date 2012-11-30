@@ -1,0 +1,36 @@
+/*
+ *= require_self
+ *= require_tree .
+*/
+
+/* Import "bootstrap" in your SCSS file of choice to get all of Bootstrap's 
+ * styles, mixins and variables! We recommend against using //= require 
+ * directives, since none of your other stylesheets will be able to use the 
+ * awesome mixins that Bootstrap has defined. */
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+.page-header span .btn {
+  float: right;
+}
+
+dl dl {
+  padding-left: 2em;
+  border-left: 1px solid #DDD;
+}
+dl dt {
+  font-size: 1.45em;
+  line-height: 1.45em;
+}
+dl dd dl dt {
+  font-size: 1.3em;
+  line-height: 1.3em;
+}
+dl dd dl dd dl dt {
+  font-size: 1.15em;
+  line-height: 1.15em;
+}
+dl dd dl dd dl dd dl dt {
+  font-size: 1em;
+  line-height: 1em;
+}
