@@ -1,5 +1,6 @@
 GEM
   remote: http://rubygems.org/
+  remote: https://gems.gemfury.com/***REMOVED***/
   specs:
     actionmailer (3.2.7)
       actionpack (= 3.2.7)
@@ -44,7 +45,7 @@ GEM
     eventmachine (1.0.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    g5_component_garden (0.0.2)
+    g5_component_garden (0.0.3)
       g5_hentry_consumer (~> 0.2.5)
       rails (~> 3.2.0)
     g5_hentry_consumer (0.2.5)
@@ -146,7 +147,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 2.1.0.1)
   coffee-rails (~> 3.2.1)
-  g5_component_garden (~> 0.0.2)
+  g5_component_garden (~> 0.0.3)
   guard-rspec
   guard-spork
   jquery-rails
