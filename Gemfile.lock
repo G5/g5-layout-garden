@@ -45,10 +45,10 @@ GEM
     eventmachine (1.0.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    g5_component_garden (0.0.5)
+    g5_component_garden (0.0.6)
       g5_hentry_consumer (~> 0.2.5)
       rails (~> 3.2.0)
-    g5_hentry_consumer (0.2.5)
+    g5_hentry_consumer (0.2.6)
       hentry_consumer (~> 0.5.2)
     guard (1.4.0)
       listen (>= 0.4.2)
@@ -147,7 +147,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (~> 2.1.0.1)
   coffee-rails (~> 3.2.1)
-  g5_component_garden (~> 0.0.5)
+  g5_component_garden (~> 0.0.6)
   guard-rspec
   guard-spork
   jquery-rails
