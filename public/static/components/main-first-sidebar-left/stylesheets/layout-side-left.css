@@ -1,8 +1,8 @@
 @media (min-width: 980px) {
-  .layout-side-left .main {
+  .layout-side-left section[role=main] {
     float: right;
   }
-  .layout-side-left .aside {
+  .layout-side-left aside[role=complementary] {
     float: left;
   }
   footer[role=contentinfo] {
