@@ -1,4 +1,13 @@
 @media (min-width: 980px) {
+  .wrapper:before,
+  .wrapper:after {
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+  .wrapper:after {
+    clear: both;
+  }
   .layout-side-left section[role=main] {
     float: right;
   }
