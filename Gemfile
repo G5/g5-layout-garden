@@ -8,7 +8,7 @@ gem "jquery-rails"
 gem "quiet_assets", "~> 1.0.1"
 gem "bootstrap-sass", "~> 2.1.0.1"
 
-gem "g5_component_garden", "~> 0.0.6"
+gem "g5_component_garden", "~> 0.0.9"
 
 group :assets do
   gem "sass-rails", "~> 3.2.3"
