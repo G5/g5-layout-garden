@@ -1,14 +1,14 @@
 source :rubygems
 source 'https://gems.gemfury.com/***REMOVED***/'
 
-gem "rails", "3.2.11"
+gem "rails", "3.2.13"
 gem "pg"
 gem "jquery-rails"
 
 gem "quiet_assets", "~> 1.0.1"
 gem "bootstrap-sass", "~> 2.1.0.1"
 
-gem "g5_component_garden", "~> 0.0.9"
+gem "g5_component_garden", "~> 0.2"
 
 group :assets do
   gem "sass-rails", "~> 3.2.3"
