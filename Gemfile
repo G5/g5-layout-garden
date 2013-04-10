@@ -1,8 +1,7 @@
-source :rubygems
+source 'https://rubygems.org'
 source 'https://gems.gemfury.com/***REMOVED***/'
 
 gem "rails", "3.2.13"
-gem "pg"
 gem "jquery-rails"
 
 gem "quiet_assets", "~> 1.0.1"
