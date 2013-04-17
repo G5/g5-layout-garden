@@ -45,7 +45,7 @@ GEM
     eventmachine (1.0.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    g5_component_garden (0.3.1)
+    g5_component_garden (0.3.2)
       microformats2 (= 2.0.0.pre4)
       rails (~> 3.2.13)
     guard (1.4.0)
