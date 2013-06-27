@@ -42,7 +42,7 @@ common: &default_settings
   #       - Ajax Service
   #       - All Services
   #
-  app_name: G5 Layout Garden
+  app_name: G5 Development - Layout Garden
 
   # When "true", the agent collects performance data about your
   # application and reports this data to the New Relic service at
