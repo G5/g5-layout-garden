@@ -15,7 +15,8 @@ group :assets do
   gem "uglifier", ">= 1.0.3"
 end
 
-group :test do
+group :development, :test do
+  gem "dotenv-rails", "~> 0.9.0"
   gem "rspec-rails"
   gem "guard-rspec"
   gem "guard-spork"
