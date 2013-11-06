@@ -17,3 +17,6 @@
 /config/database.yml
 /public/system
 /public/uploads
+
+# Ignore environment specific env
+.env.*
