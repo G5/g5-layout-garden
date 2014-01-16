@@ -76,7 +76,7 @@ GEM
       nokogiri (~> 1.5.6)
     mime-types (1.23)
     multi_json (1.7.7)
-    newrelic_rpm (3.6.4.122)
+    newrelic_rpm (3.7.1.182)
     nokogiri (1.5.10)
     polyglot (0.3.3)
     quiet_assets (1.0.1)
