@@ -1,13 +1,11 @@
 source 'https://rubygems.org'
-source 'https://gems.gemfury.com/***REMOVED***/'
 
 gem "rails", "3.2.13"
 gem "jquery-rails"
 
 gem "quiet_assets", "~> 1.0.1"
 gem "bootstrap-sass", "~> 2.1.0.1"
-
-gem "g5_component_garden", "~> 0.4"
+gem "microformats2", "~> 2.0.0"
 
 group :assets do
   gem "sass-rails", "~> 3.2.3"

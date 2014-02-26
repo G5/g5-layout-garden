@@ -1,0 +1,28 @@
+<article class="h-g5-component well">
+  <header>
+    <h2 class="p-name">
+      <%= component.resource_link({url: component_url(component.g5_uid),
+                                   html: {class: "u-url u-uid", rel: "bookmark"},
+                                   body: component.name}) %>
+    </h2>
+
+    <p class="p-summary"><%= component.summary %></p>
+
+    <p>
+      <%= component.resource_link({uri: component.photo,
+                                   html: {class: "u-photo u-url"},
+                                   body: raw("<img src=#{component.photo}>")}) %>
+    </p>
+
+    <% if component.respond_to?(:g5_stylesheets) %>
+      <% component.g5_stylesheets.each do |stylesheet| %>
+        <p>
+          <%= component.resource_link({uri: stylesheet,
+                                       html: {class: "u-g5-stylesheet u-url"}}) %>
+        </p>
+      <% end %>
+    <% end %>
+  </header>
+
+  <%= content_tag :pre, content_tag(:code, component.content, class: "e-content") %>
+</article>
