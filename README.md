@@ -22,6 +22,7 @@ rake db:create db:schema:load db:seed
 
   * Jessica Lynn Suttles / [@jlsuttles](https://github.com/jlsuttles)
   * Bookis Smuin / [@bookis](https://github.com/bookis)
+  * Chad Crissman / [@crissmancd](https://github.com/crissmancd)
 
 
 ## Contributing
