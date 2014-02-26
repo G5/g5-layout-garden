@@ -14,15 +14,16 @@ group :assets do
 end
 
 group :development, :test do
-  gem "dotenv-rails", "~> 0.9.0"
+  gem "dotenv-rails"
   gem "rspec-rails"
-  gem "guard-rspec"
-  gem "guard-spork"
-  gem 'rb-fsevent', '~> 0.9.1'
+  # ruby spec coverage
+  gem "simplecov", require: false
+  gem "codeclimate-test-reporter", require: false
 end
 
 group :production do
   gem "thin", "~> 1.5.0"
+  gem "rails_12factor"
   gem "newrelic_rpm"
   gem "honeybadger"
 end
