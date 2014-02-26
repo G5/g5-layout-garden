@@ -16,6 +16,8 @@ end
 group :development, :test do
   gem "dotenv-rails"
   gem "rspec-rails"
+  # ruby request specs
+  gem "capybara"
   # ruby spec coverage
   gem "simplecov", require: false
   gem "codeclimate-test-reporter", require: false
