@@ -1,5 +1,7 @@
 # G5 Layout Garden
 
+[![Build Status](https://travis-ci.org/G5/g5-layout-garden.png)](https://travis-ci.org/G5/g5-layout-garden)
+
 A garden of layouts that can be used in client location sites
 
 
