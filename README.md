@@ -1,6 +1,7 @@
 # G5 Layout Garden
 
 [![Build Status](https://travis-ci.org/G5/g5-layout-garden.png)](https://travis-ci.org/G5/g5-layout-garden)
+[![Code Climate](https://codeclimate.com/repos/530e838ee30ba04f810019c2/badges/ec06f3602d87dffca264/gpa.png)](https://codeclimate.com/repos/530e838ee30ba04f810019c2/feed)
 
 A garden of layouts that can be used in client location sites
 
