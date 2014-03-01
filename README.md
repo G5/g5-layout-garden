@@ -10,13 +10,6 @@ A garden of layouts that can be used in client location sites
 bundle
 ```
 
-1. Set up your database
-```bash
-cp config/database.example.yml config/database.yml
-vi config/database.yml # edit username
-rake db:create db:schema:load db:seed
-```
-
 
 ## Authors
 
@@ -37,7 +30,7 @@ rake db:create db:schema:load db:seed
 1. Create new Pull Request
 
 If you find bugs, have feature requests or questions, please
-[file an issue](https://github.com/g5/g5-layout-garden/issues).
+[file an issue](https://github.com/G5/g5-layout-garden/issues).
 
 
 ## Specs
