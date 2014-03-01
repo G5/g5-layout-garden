@@ -11,7 +11,7 @@
     <p>
       <%= component.resource_link({uri: component.photo,
                                    html: {class: "u-photo u-url"},
-                                   body: raw("<img src=#{component.photo}>")}) %>
+                                   body: raw("<img src=/#{component.photo}>")}) %>
     </p>
 
     <% if component.respond_to?(:g5_stylesheets) %>
