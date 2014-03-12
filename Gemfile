@@ -23,7 +23,7 @@ group :development, :test do
 end
 
 group :production do
-  gem "thin", "~> 1.5.0"
+  gem "unicorn"
   gem "rails_12factor"
   gem "newrelic_rpm"
   gem "honeybadger"
