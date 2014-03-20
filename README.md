@@ -39,7 +39,7 @@ If you find bugs, have feature requests or questions, please
 ## Specs
 
 ```bash
-guard
+rspec
 ```
 
 
