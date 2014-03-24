@@ -10,7 +10,7 @@ describe "components_path" do
   end
 
   it "has 6 layouts marked up as .h-g5-component" do
-    expect(all(".h-g5-component").length).to eq 6
+    expect(all(".h-g5-component").length).to eq 3
   end
 
   describe "every layout" do
@@ -47,7 +47,7 @@ describe "components_path" do
 
   describe "some layouts" do
     it "have a stylesheet" do
-      expect(all(".h-g5-component .u-g5-stylesheet").length).to be 4
+      expect(all(".h-g5-component .u-g5-stylesheet").length).to be 2
     end
   end
 end
