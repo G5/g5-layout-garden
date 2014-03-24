@@ -11,6 +11,7 @@
   .layout-side-left section[role=main] {
     float: right;
   }
+  .layout-side-left .aside-top,
   .layout-side-left aside[role=complementary] {
     float: left;
   }
