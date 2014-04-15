@@ -20,6 +20,7 @@ group :development, :test do
   # ruby spec coverage
   gem "simplecov", require: false
   gem "codeclimate-test-reporter", require: false
+  gem "foreman"
 end
 
 group :production do
