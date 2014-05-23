@@ -14,11 +14,8 @@
     <div class="rows-layout layout">
 
       <header role="banner">
-        <div class="content">
-
-          <div id="drop-target-logo"><!-- place logo widget here --></div>
-
-          <div class="navigation-container collapsable">
+        <div class="navigation-container collapsable">
+          <div class="content">
 
             <div class="buttons">
               <span id="drop-target-btn"><!-- btn widget here --></span>
@@ -26,13 +23,22 @@
             </div>
 
             <div id="drop-target-nav" class="collapsable-content"><!-- nav widget here --></div>
+          </div> <!-- end .content -->
+        </div> <!-- end .navigation-container -->
 
-          </div>
+        <div class="logo-container">
+          <div id="drop-target-logo" class="content"><!-- place logo widget here --></div>
         </div>
       </header>
 
+      <div id="drop-target-aside-before-main">
+      </div>
+
       <section role="main" id="drop-target-main">
       </section>
+
+      <aside id="drop-target-aside-after-main">
+      </aside>
 
       <footer role="contentinfo">
         <div id="drop-target-footer" class="content"></div>
