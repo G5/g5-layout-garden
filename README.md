@@ -20,6 +20,7 @@ bundle
   * Bookis Smuin / [@bookis](https://github.com/bookis)
   * Chad Crissman / [@crissmancd](https://github.com/crissmancd)
   * Jessica Dillon / [@jessicard](https://github.com/jessicard)
+  * Brian Bauer / [@bbauer](https://github.com/bbauer)
 
 
 ## Contributing
